@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <Preference
+        android:key="dobly"
+        android:summary="@string/doble_summary"
+        android:title="@string/dobly_title" />
+    
+    <CheckBoxPreference
+        android:key="camera_sound"
+        android:title="@string/camera_sound_title"
+        android:summary="@string/camera_sound_summary" />
+    
+    <CheckBoxPreference
+        android:key="ring"
+        android:title="@string/incoming_ring_title"
+        android:summary="@string/incoming_ring_summary" />
+
+    <CheckBoxPreference
+        android:key="sound"
+        android:title="@string/boot_sound_title"
+        android:summary="@string/boot_sound_summary" />
+    
+    <ListPreference
+        android:key="storage"
+        android:title="@string/storage_title"
+        android:dialogTitle="@string/storage_dialog_title"
+        android:entries="@array/storage_entries"
+        android:entryValues="@array/storage_values"
+        android:defaultValue="0" />
+    
+    <Preference
+        android:key="rb"
+        android:title="重启到..." />
+
+    
+</PreferenceScreen>

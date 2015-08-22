@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <Preference
+        android:key="smartscreen"
+        android:title="@string/smart_screen_title"
+        android:summary="@string/smart_screen_summary" />
+    <Preference
+        android:key="gesture"
+        android:title="@string/gesture_title"
+        android:summary="@string/gesture_summary" />
+    <Preference
+        android:key="screeneffect"
+        android:summary="@string/screen_effect_summary"
+        android:title="@string/screen_effect_title" />
+    <CheckBoxPreference
+        android:key="glovesmode"
+        android:title="@string/gloves_mode_title"
+        android:summary="@string/gloves_mode_summary" />
+    <CheckBoxPreference
+        android:key="doublewake"
+        android:title="@string/double_wake_title"
+        android:summary="@string/double_wake_summary" />
+    <CheckBoxPreference
+        android:key="backlong"
+        android:title="@string/backlong_title"
+        android:summary="@string/backlong_summary" />
+    <CheckBoxPreference
+        android:key="doublehome"
+        android:title="@string/double_tap_home_title"
+        android:summary="@string/double_tap_home_summary" />
+    <ListPreference
+        android:key="key_back"
+        android:title="@string/reverse_back_key_title"
+        android:entries="@array/key_entries"
+        android:entryValues="@array/key_values"
+        android:defaultValue="0" />
+    <ListPreference
+        android:key="camera"
+        android:title="@string/switch_camera_title"
+        android:entries="@array/switch_camera__entries"
+        android:entryValues="@array/switch_camera_values"
+        android:defaultValue="0" />
+    <EditTextPreference
+        android:key="dpi"
+        android:dialogMessage="调整密度可能会出现图标裂开、丢失或其他情况"
+        android:title="@string/screen_dpi_title"
+        android:dialogTitle="@string/screen_dpi_dialog_title"
+        android:summary="@string/screen_dpi_summary" />
+    <Preference
+        android:key="author"
+        android:summary="@string/author_name_summary"
+        android:title="@string/author_name_title" />
+    <!--
+    <Preference
+        android:key="zfb"
+        android:summary="@string/zfb_summary"
+        android:title="@string/zfb_title" />  -->
+</PreferenceScreen>

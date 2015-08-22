@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:juelian="http://schemas.android.com/apk/res/juelian.settings" >
+
+    <Preference
+        android:key="networktype"
+        android:title="@string/networktype_title" />
+
+    <Preference
+        android:key="timerpower"
+        android:title="@string/timer_power_title" />
+    <Preference
+        android:key="quickon"
+        android:title="@string/quite_on" />
+    <Preference
+        android:key="wifi"
+        android:title="@string/wifi_share_title" />
+    <Preference
+        android:key="pppoe"
+        android:title="@string/pppoe_title" />
+    
+    <Preference
+        android:key="powermgr"
+        android:title="@string/power_manager" />
+    
+    <Preference
+        android:key="pc"
+        android:title="@string/connect_pc" />
+    
+    <Preference
+        android:key="default_app"
+        android:title="@string/default_app_title" />
+    
+    <ListPreference
+        android:key="home_layout"
+        android:title="@string/home_layout_title"
+        android:entries="@array/home_layout_entries"
+        android:entryValues="@array/home_layout_values"
+        android:defaultValue="2" />
+    <Preference
+        android:key="sf"
+        android:title="@string/sf_title"
+        android:summary="@string/sf_summary" />
+    <Preference
+        android:key="sficon"
+        android:title="护目镜桌面快捷入口"
+        android:summary="发送护目镜到桌面快捷方式" />
+	    
+    <PreferenceScreen
+        android:key="appmgr"
+        android:title="@string/app_manager_title"
+        android:summary="@string/app_manager_summary"
+        android:fragment="com.android.jlsettings.applications.ManageApplications" />
+</PreferenceScreen>

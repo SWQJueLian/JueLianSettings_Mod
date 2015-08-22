@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+    
+    <TextView
+        android:id="@+id/howwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:text="点击链接进入作者微博，长按输入框复制QQ群号"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <View
+        android:layout_marginTop="8.0dp"
+        android:layout_below="@id/howwork"
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp"
+        android:background="#ffe9e9e9" />
+    
+    <TextView
+        android:id="@+id/gotoweibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginTop="10.0dp"
+        android:autoLink="web"
+        android:text="关注微博："
+        android:textSize="16sp" />
+    
+    <TextView
+        android:textColor="@android:color/holo_orange_dark"
+        android:id="@+id/gotoweibo_web"
+        android:layout_below="@id/line"
+        android:layout_toRightOf="@id/gotoweibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dp"
+        android:text="@string/weibo_web"
+        android:textSize="16sp"
+        android:textStyle="italic" /> />
+    
+    <TextView
+        android:layout_below="@id/gotoweibo_web"
+        android:layout_alignBaseline="@+id/editText1"
+        android:id="@+id/QQGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QQ群反馈："
+        android:textSize="16sp" />
+
+    <EditText
+        android:layout_marginBottom="10.0dp"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_below="@id/gotoweibo_web"
+        android:layout_toRightOf="@id/QQGroup"
+        android:id="@id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="436165093"
+        android:textColor="@android:color/holo_orange_dark" >
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
